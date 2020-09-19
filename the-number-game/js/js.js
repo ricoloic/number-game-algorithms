@@ -64,8 +64,13 @@ $(function () {
         $('#state').hide();
     };
 
+    function resetInput () {
+        $('#guess').val("");
+    }
+
     select.change(() => {
         option = $('#difficulty option:selected').val();
+        resetInput();
         
         if (option == 0) {
             initialize(1, 10);
