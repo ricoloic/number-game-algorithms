@@ -1,0 +1,67 @@
+header => name
+    p => difficulty
+/header
+
+box difficulty
+    range(5) from [very easy] to [very difficult]
+
+if (difficulty) {
+
+    let try = difficulty-number-try
+
+    header => (try) left
+
+    let win/lose = lose;
+    
+    let number = random-number-betewn-range
+
+    if (number try != 0) {
+                    
+        promt to chose number betewn range + (btn or something)
+
+        if (choice1 < number) {
+
+            header => number grater
+
+            try--
+        
+        } else if (choice1 > number) {
+
+            header => number smaller
+
+            try--
+
+        } else {
+
+            header => you won
+
+            try = 0;
+            
+            win/lose = win;
+
+        }
+
+    } else {
+
+        if (win/lose === lose) {
+
+            header => you lost
+
+        }
+
+        promt let choise2 = replay || close
+
+        if (choice2 === replay) {
+
+            reset;
+
+        } else {
+
+            close;
+
+        }
+                
+
+    }
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Number Game Algorithms</title>
+
+	<link rel="stylesheet" href="css/css.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+	<section class="container">
+		<header class="text-center header">
+			<h1>The Number Game</h1>
+		</header>
+
+		<div class="row">
+			<div class="col-6 mx-auto">
+				<select class="custom-select" name="difficulty" id="difficulty">
+					<option value="" selected disabled>Choose your difficulty</option>
+					<option value="0">Very Easy - 1 to 10 - Unlimited trials</option>    // Unlimited trials
+					<option value="1">Easy - 1 to 10 - 5 tries</option>    // 5 tries
+					<option value="2">Medium - 1 to 100 - 5 tries</option>    // 5 tries
+					<option value="3">Hard - 1 to 500 - 8 tries</option>    // 8 tries
+					<option value="4">Very Hard - 1 to 1000 - 9 tries</option>    // 9 tries
+				</select>
+			</div>
+		</div>
+
+		<hr class="hr-bold my-15"/>
+
+		<div class="row" id="algo" style="display: none;">
+			<div class="col-6 text-center">
+				<p class="fs-25 my-auto p-15" id="bot">
+					Hi, I'm here to see if you've guessed my number. My number is between <span id="number-range"></span>.
+				</p>
+			</div>
+
+			<div class="col-6 text-center d-flex">
+				<div class="my-auto mx-auto">
+					<label for="guess" class="fs-20">Enter your guess</label>
+					<input type="number" id="guess" name="guess" min="0" max="1000" oninput="validity.valid||(value='');">
+					<a id="submit" class="btn btn-danger">Guess</a>
+
+					<small id="numTryLeft" class="form-text text-muted">
+						
+					</small>
+				</div>
+				<p id="triesLeft">
+				</p>
+			</div>
+		</div>
+
+		<div class="row" style="display: none;" id="state">
+			<div class="col-2"></div>
+
+			<h3 class="col-5 fs-25 text-center" id="win-lose"></h3>
+
+			<a class="col-3 btn btn-outline-info" id="replay">Play Again!</a>
+			
+			<div class="col-2"></div>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/js.js"></script>
+</body>

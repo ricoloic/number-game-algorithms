@@ -1,0 +1,39 @@
+.header {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.my-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.hr-bold {
+    background-color: black;
+}
+
+.box-1 {
+    border: 2px solid darkgrey;
+}
+
+.not-show {
+    display: none;
+}
