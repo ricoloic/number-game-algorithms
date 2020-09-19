@@ -3,3 +3,5 @@ This is a little game I created in the context of an exercise from the [Codeboxx
 
 ## Here is a link to it
 [The Number Game](https://number-game-algorithms.vercel.app/)
+
+![The Game](https://i.imgur.com/5Hy5Hxj.png)
