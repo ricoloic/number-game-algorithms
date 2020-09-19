@@ -65,15 +65,16 @@ $(function () {
     };
 
     function resetInput () {
-        $('#guess').val("");
+        $('#guess').val('');
     }
 
     select.change(() => {
         option = $('#difficulty option:selected').val();
         resetInput();
-        
+
         if (option == 0) {
             initialize(1, 10);
+            resetInput();
 
             tryLeft.text('Unlimited');
             algo.show();
@@ -87,6 +88,7 @@ $(function () {
 
         } else if (option == 1) {
             initialize(1, 10);
+            resetInput();
 
             algo.show();
 
@@ -108,6 +110,7 @@ $(function () {
             });
         } else if (option == 2) {
             initialize(1, 100);
+            resetInput();
 
             algo.show();
 
@@ -129,6 +132,7 @@ $(function () {
             });
         } else if (option == 3) {
             initialize(1, 500);
+            resetInput();
 
             algo.show();
 
@@ -150,6 +154,7 @@ $(function () {
             });
         } else if (option == 4) {
             initialize(1, 1000);
+            resetInput();
 
             algo.show();
 
